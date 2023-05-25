@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scoreboard Control</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body class="background">
+    <div class="main-div">
+        <div>
+            <h2 class="scoreboard-control-lable">Scoreboard Controls</h2>
+        </div>
+        <div>
+            <div>
+                <h3>Timer</h3>
+                <div class="timer-container font-size-timer">
+                    00:00
+                </div>
+                <div>
+                    <button onclick="startTimer()" class="start-timer pointer-button green nice-button">Start</button>
+                    <button onclick="pauseTimer()"
+                        class="stop-timer pointer-button yellow nice-button">Pause/Stop</button>
+                    <button onclick="resetTimer()" class="reset-timer pointer-button red nice-button">Reset</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>Team 1</h3>
+                    <label for="teamName1">Name: </label>
+                    <input type="text" id="teamName1" class="custom-input">
+                    <button onclick="updateTeamName(1)" class="nice-button">Update</button>
+                    <div class="score-count score-count-display font-size-timer">0</div>
+                    <button onclick="increaseScore(1)"
+                        class="increment-score pointer-button nice-button">Increase</button>
+                    <button onclick="resetScore(1)" class="reset-score pointer-button red nice-button">Reset</button>
+                </div>
+                <div>
+                    <h3>Team 2</h3>
+                    <label for="teamName2">Name: </label>
+                    <input type="text" id="teamName2" class="custom-input">
+                    <button onclick="updateTeamName(2)" class="nice-button">Update</button>
+                    <div class="score-count score-count-display2 font-size-timer">0</div>
+                    <button onclick="increaseScore(2)"
+                        class="increment-score2 pointer-button nice-button">Increase</button>
+                    <button onclick="resetScore(2)" class="reset-score2 pointer-button red nice-button">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/controlmonitoring.js"></script>
+</body>
+
+</html>
